@@ -1,3 +1,8 @@
+作者：TRHX
+链接：https://zhuanlan.zhihu.com/p/69211731
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 var a_idx = 0;
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
@@ -22,3 +27,12 @@ jQuery(document).ready(function($) {
         },
             3000,
             function() {
+                $i.remove();
+            });
+    });
+    setTimeout('delay()', 2000);
+});
+
+function delay() {
+    $(".buryit").removeAttr("onclick");
+}
